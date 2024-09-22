@@ -1,0 +1,3 @@
+[settings]
+os=baremetal
+arch=armv7
