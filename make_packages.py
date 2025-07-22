@@ -28,7 +28,7 @@ for url, device, arch in repositories:
         result = subprocess.run(comand, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
 
         if result.returncode == 0:
-            comand = f" conan upload hal_{device.lower()}/{tag} -r=arm-tools"
+            comand = f" conan upload hal_{device.lower()}/{tag} -r=nexus.iahve.space"
             result = subprocess.run(comand, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
             print("Команда завершилась успешно")
             print("Вывод команды:", result.stdout)
